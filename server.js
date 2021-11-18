@@ -22,9 +22,6 @@ app.get("/", async (req, res) => {
 //Q80Usu1mQIEMvYFQ
 
 // CONNECTION URI
-// const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.dv4ff.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
-
-// const uri = "mongodb+srv://BikersParadise:6aJHBbOo5PXLJgv3@cluster0.hplqh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 const uri = "mongodb+srv://BikersParadise:Q80Usu1mQIEMvYFQ@cluster0.hplqh.mongodb.net/BikersParadise?retryWrites=true&w=majority";
 
@@ -33,7 +30,6 @@ const client = new MongoClient(uri, {
   useUnifiedTopology: true,
 });
 
-// console.log(uri);
 //DB CONNECTION
 async function run() {
   try {
